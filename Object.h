@@ -30,13 +30,13 @@ public:
 };
 
 class BinaryOperatorTask: public Task, public Named{
-	float left_;
-	float right_;
+	double left_;
+	double right_;
 	char operation_;
-	float result_ = 0;
+	double result_ = 0;
 
 public:
-	BinaryOperatorTask( std::string name, float left, float right, char  operation ):
+	BinaryOperatorTask( std::string name, double left, double right, char  operation ):
 		Named( name ),
 		left_( left ),
 		right_( right ),
